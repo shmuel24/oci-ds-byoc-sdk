@@ -10,6 +10,7 @@ This repository provides an example of using Oracle Cloud Infrastructure (OCI) D
 │   └── process_batch.py     # Example script to process files in Object Storage
 ├── create_job.py            # Script to create OCI Data Science Job definition
 ├── batch_run_jobs.py        # Script to submit multiple JobRuns in batches
+├── DynamicGroup_Policy      # Example for policy and dynamic group configuration in OCI
 └── README.md                # This documentation
 ```
 
@@ -19,6 +20,7 @@ This repository provides an example of using Oracle Cloud Infrastructure (OCI) D
 * OCI CLI installed and configured with a user who has Data Science and Object Storage permissions
 * Python 3.12 (for local testing)
 * Docker (for building the container image)
+* Create a Dynamic Group and an IAM policy for your Data Science jobs using the example definitions in the DynamicGroup_Policy file.
 
 ## Setup
 
