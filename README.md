@@ -27,7 +27,7 @@ This repository provides an example of using Oracle Cloud Infrastructure (OCI) D
 1. **Build and push your container image**
 
    ```bash
-   docker build -t <YOUR_REGISTRY>/<REPO>:<TAG> .
+   docker build -t --platform linux/amd64 <YOUR_REGISTRY>/<REPO>:<TAG> .
    docker push <YOUR_REGISTRY>/<REPO>:<TAG>
    ```
 
