@@ -1,0 +1,14 @@
+# Dynamic Group
+ALL {resource.type = 'datasciencejobrun', resource.compartment.id = '<YOUR_COMPARTMENT_OCID>'}
+
+
+# Policy
+Allow dynamic-group <YOUR_DG_NAME> to read objects in compartment <YOUR_COMPARTMENT_NAME> where target.bucket.name='<YOUR_BUCKET_NAME>'
+Allow dynamic-group <YOUR_DG_NAME> to use log-content in compartment <YOUR_COMPARTMENT_NAME>
+Allow dynamic-group <YOUR_DG_NAME> to use logging-family in compartment <YOUR_COMPARTMENT_NAME>
+Allow dynamic-group <YOUR_DG_NAME> to manage log-groups in compartment <YOUR_COMPARTMENT_NAME>
+Allow dynamic-group <YOUR_DG_NAME>  to read repos in compartment <YOUR_COMPARTMENT_NAME>
+Allow dynamic-group <YOUR_DG_NAME>  to use data-science-family in compartment <YOUR_COMPARTMENT_NAME>
+Allow dynamic-group <YOUR_DG_NAME>  to use virtual-network-family in compartment <YOUR_COMPARTMENT_NAME>
+Allow dynamic-group <YOUR_DG_NAME>  to manage objects in compartment <YOUR_COMPARTMENT_NAME>
+Allow dynamic-group <YOUR_DG_NAME> to use buckets in compartment <YOUR_COMPARTMENT_NAME>
